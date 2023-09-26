@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void printWelcomeMenu();
 void printOptions();
@@ -47,6 +48,7 @@ void add() {
 	scanf_s("%lf", &num2);
 	result = num1 + num2;
 	printf("%lf + %lf = %lf\n", num1, num2, result);
+	exit(1);
 }
 
 void subtract() {
@@ -57,5 +59,6 @@ void subtract() {
 	scanf_s("%lf", &num2);
 	result = num1 - num2;
 	printf("%lf - %lf = %lf\n", num1, num2, result);
+	exit(1);
 }
 
